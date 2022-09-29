@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/style.css">
+	<title>Домашка 13</title>
+
+
+
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<header class="header">
+		</header>
+		<main class="main">
+
+			<div class="container">
+				<div class="block">
+					<div class="block__det0">
+						<div class="block__okno">
+
+						</div>
+						<div class="block__okno block__okno_right">
+
+						</div>
+					</div>
+
+					<div class="block__det1">
+						<div class="block__fara"></div>
+
+
+
+
+						<div class="block__det2">
+							<div class="block__ruchka"></div>
+							<div class="block__ruchka block__ruchka_right"></div>
+							<div class="block__zad-fara"></div>
+
+
+						</div>
+
+					</div>
+
+
+					<div class="block__det3">
+
+
+						<div class="block__det4 koleso">
+							<div class="koleso__1"></div>
+							<div class="koleso__2 "></div>
+
+						</div>
+
+						<div class="block__det4 koleso koleso_right">
+							<div class="koleso__1"></div>
+							<div class="koleso__2 "></div>
+
+						</div>
+					</div>
+				</div>
+
+
+				<div class="musornik">
+					<div class="musornik__conteiner">
+
+					</div>
+
+				</div>
+
+				<div class="police">
+					<div class="police__det0">
+						<div class="police__verh-fara"></div>
+
+						<div class="police__okno">
+
+						</div>
+						<div class="police__okno police__okno_right">
+
+						</div>
+					</div>
+
+					<div class="police__det1">
+						<div class="police__fara"></div>
+
+
+
+
+						<div class="police__det2">
+							<div class="police__ruchka"></div>
+							<div class="police__ruchka police__ruchka_right"></div>
+							<div class="police__zad-fara"></div>
+
+
+						</div>
+
+					</div>
+
+
+					<div class="police__det3">
+
+
+						<div class="police__det4 p-koleso">
+							<div class="p-koleso__1"></div>
+							<div class="p-koleso__2 "></div>
+
+						</div>
+
+						<div class="police__det4 p-koleso p-koleso_right">
+							<div class="p-koleso__1"></div>
+							<div class="p-koleso__2 "></div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+	</div>
+
+	<!-- .......................... -->
+
+	<h1>Transition-duration</h1>
+	<h2>Определяет промежуток времени, в течение которого должен осуществляться переход. Собственно – тут мы
+		указываем время за которое одно значение свойства по переходит (анимируется) в другое. Свойство не
+		наследуется.</h2>
+	<h2>transition-duration: 0.5s</h2>
+	<div class="button">Я Transition-duration</div>
+
+	<h1>Transition-property</h1>
+	<h2>Содержит название CSS-свойств, к которым будет применен эффект перехода. Значение свойства может содержать
+		как одно свойство, так и список свойств через запятую. Свойство не наследуется.</h2>
+	<h2> transition-duration: 3s;
+		transition-property: background-color</h2>
+
+	<div class="button2">Я Transition-property</div>
+
+	<h1>Transition-delay</h1>
+	<h2>Задержка выполнения перехода. Позволяет сделать так, чтобы изменение свойства происходило не моментально, а
+		с некоторой задержкой. Время задержки перехода указывается в секундах или миллисекундах. Свойство не
+		наследуется.</h2>
+	<h2>transition-duration: 1s;
+		transition-property: all;
+		transition-delay: 1s</h2>
+
+	<div class="button3">Я Transition-delay</div>
+
+	<h1>Transition-timing-function</h1>
+	<h2>Задаёт стиль нашего перехода, то есть некий сценарий, по которому будет осуществятся анимация.</h2>
+	<h2>ease
+		по умолчанию, Переход начинается медленно, разгоняется быстро и замедляется в конце. </h2>
+
+
+	<div class="button4">Я ease</div>
+	<h2>ease-in, Переход начинается медленно, а затем плавно ускоряется в конце. </h2>
+	<div class="button5">Я ease-in</div>
+
+	<h2>ease-out, Переход начинается быстро и плавно замедляется в конце. </h2>
+	<div class="button6">Я ease-out</div>
+
+	<h2>ease-in-out, Переход медленно начинается и медленно заканчивается.</h2>
+	<div class="button7">Я ease-in-out </div>
+
+	<h2>linear, Переход происходит равномерно на протяжении всего времени, без колебаний в скорости. </h2>
+	<div class="button8">Я linear</div>
+
+	<h2>steps(int,start|end), Временная функция позволяет разбить анимацию на чёткое количество шагов указанных в
+		int. Так же можно задать момент выполнения: Start – означает, что при начале анимации нужно сразу применить
+		первое изменение. End - означало бы, что изменения нужно применять не в начале, а в конце каждого шага</h2>
+
+	<h2> transition-timing-function: steps(3,start)
+	</h2>
+	<div class="button9">Я Step-start</div>
+	<h2> transition-timing-function: steps(3,end)
+	</h2>
+	<div class="button10">Я Step-end</div>
+
+
+	<h2>cubic-bezier(x1,y1,x2,y2), Позволяет вручную установить значения (положительные и отрицательные) для кривой
+		ускорения и создать свою собственную анимацию</h2>
+	<div class="button11">Я cubic-bezier</div>
+
+	<h1>Универсальная запись/ transition:transition-property transition-duration
+		transition-timing-function transition-delay, ...;
+	</h1>
+	<h2>transition:background-color 0.5s ease 0s, color 1s linear 0s,
+		font-size 0.5s ease-in-out 0.5s</h2>
+	<div class="button12">Я Универсальная</div>
+
+	<!-- ........................................................................................ -->
+
+	<h1>Animation-name</h1>
+	<h2>Определяет список применяемых к элементу анимаций (ключевых кадров). Можно указать через
+		запятую. Причем приоритет у последней записи.</h2>
+
+	<h1>Animation-duration</h1>
+	<h2>Отвечает за продолжительность анимации.</h2>
+
+	<h1>Animation-timing-function</h1>
+	<h2>Задаёт сценарий развития анимации между ключевыми кадрами.</h2>
+
+	<h1>Animation-iteration-count</h1>
+	<h2>Отвечает за повтор проигрывания ключевых кадров.</h2>
+
+	<div class="animation">
+		<div class="animation__item"></div>
+
+	</div>
+
+	<h1>Animation-direction</h1>
+	<h2>Определяет направление и тип проигрывания ключевых кадров.</h2>
+	<h2>reverse, Кадры будут проигрываться в обратном порядке.
+
+	</h2>
+
+	<div class="animation2">
+		<div class="animation__item2"></div>
+	</div>
+
+	<h2>alternate, Каждый чётный проход по кадрам будет проигрываться в обратном порядке.</h2>
+	<div class="animation3">
+		<div class="animation__item3"></div>
+	</div>
+
+
+	<h2>alternate-reverse, Каждый нечётный проход по кадрам будет проигрываться в обратном порядке.
+	</h2>
+	<div class="animation4">
+		<div class="animation__item4"></div>
+	</div>
+
+	<h1>Animation-play-state</h1>
+	<h2>Позволяет запускать или останавливать анимацию по событию.
+	</h2>
+	<div class="animation5">
+		<div class="animation__item5"></div>
+	</div>
+
+	<h1>Animation-delay</h1>
+	<h2>Отвечает за задержку перед проигрыванием.</h2>
+
+	<div class="animation6">
+		<div class="animation__item6"></div>
+	</div>
+
+
+	<h1>Animation-fill-mode</h1>
+	<h2>Определяет какие значения анимируемых css свойств применятся к объекту после завершения анимации.</h2>
+	<h2>backwards, Как только анимация будет применена, на всё время задержки её запуска используются значения,
+		определённые для позиции 0% её ключевого кадра.</h2>
+	<div class="animation7">
+		<div class="animation__item7"></div>
+	</div>
+	<h2>forwards, Как только анимация будет завершена, значения, определённые в последнем ключевом кадре,
+		сохранятся
+		до тех пор, пока стиль анимации не будет удалён из любого селектора, нацеленного на данный узел.</h2>
+	<div class="animation8">
+		<div class="animation__item8"></div>
+	</div>
+
+	<h1>Универсальная запись</h1>
+	<h2>animation: circle 1s linear infinite normal running 0s none;</h2>
+	<h2>animation: Animation-name Animation-duration Animation-timing-function Animation-iteration-count
+		Animation-direction Animation-play-state Animation-delay Animation-fill-mode;</h2>
+
+
+
+	</main>
+	<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,1114 @@
+
+/* &display=swap&subset=cyrillic-ext */
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700,900,&display=swap);
+/* обнуление стилей */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {list-style: none;
+}
+a,
+a:visited {text-decoration: none;
+}
+a:hover {text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body{
+	height: 100%;
+}
+html{
+font-size: 16px;
+}
+body{
+	line-height: 1;
+	font-family: "Roboto";
+	color: #4B4B4B;
+	background: #F5F5F5;
+	overflow-x: hidden;
+
+	
+}
+.wrapper{
+	min-height: 100%;
+
+}
+/* .............................................. */
+
+.container{
+	width: 100%;
+	height: 600px;
+	background: url("../img/highway-background-vector-1429789.jpg") 0 0/ cover no-repeat;
+}
+
+
+
+.block{
+	display: inline-block;
+	font-size: 0;
+	position: relative;
+
+	left: -15%;
+animation-name: vpered;
+animation-duration: 1s;
+animation-direction: alternate;
+animation-fill-mode: forwards;
+}
+
+@keyframes vpered{
+0%{transform: scale(-0.5,0.5) translate(0px,0px);
+
+}
+100%{transform: scale(-0.5,0.5) translate(-70%,0px);
+
+}
+}
+
+
+
+
+
+.musornik{display: inline-block;
+
+}
+.musornik__conteiner{
+display: inline-block;
+	width: 200px;
+	height: 200px;
+	
+	background: url(../img/4252.650\ \(1\).svg) 0 0 no-repeat;
+	position: relative;
+	left: -77%;
+	top:30px; 
+	animation-name: musorka;
+	animation-duration: 1.6s;
+	animation-delay: 0.9s;
+	animation-fill-mode: both;
+	
+
+
+}
+
+
+@keyframes musorka
+{
+	0%{transform: translate(0px,0px) rotate(0deg);
+
+	}
+	10%{transform: translate(30px,0px) rotate(45deg);
+
+	}
+	20%{transform: translate(60px,0px) rotate(90deg);
+
+	}
+	30%{transform: translate(90px,0px) rotate(135deg);
+
+	}
+	40%{transform: translate(120px,0px) rotate(180deg);
+
+	}
+	50%{transform: translate(150px,0px) rotate(225deg);
+
+	}
+	60%{transform: translate(180px,0px) rotate(270deg);
+
+	}
+	70%{transform: translate(210px,0px) rotate(315deg);
+
+	}
+	80%{transform: translate(240px,0px) rotate(360deg);
+
+	}
+	90%{transform: translate(270px,0px) rotate(405deg);
+
+	}
+	100%{transform:translate(300px,0px) rotate(450deg);
+	
+	}
+	
+}
+
+
+
+
+
+.block__det1{display: inline-block;
+	width: 410px;
+	height: 140px;
+	background-color: rgb(241, 12, 222);
+	border-radius: 100% 0% 100% 0% / 50% 100% 0% 50%  ;
+	position: relative;
+	border: 1px solid #000;
+	border-bottom:1px transparent;
+
+}
+
+.block__det2{display: inline-block;
+	width: 410px;
+	height: 140px;
+	border-radius: 89% 11% 100% 0% / 0% 100% 0% 100% 
+	;
+	background-color: rgb(241, 12, 222);
+	position: absolute;
+	top: 0px;
+	left: 400px;
+	border: 1px solid #000;
+	border-left:1px transparent;
+	border-bottom:1px transparent;
+
+}
+
+.block__det3{
+	width: 850px;
+	height: 60px;
+	background-color: rgb(110, 11, 102);
+	border-radius: 20px;
+	transform: translate(-15px, 0px);
+	position: relative;
+	border: 1px solid #000;
+
+}
+
+.block__det4{
+	position: absolute;
+	top: -50px;
+	left: 130px;
+
+
+}
+
+
+.koleso{
+	width: 180px;
+	height: 180px;
+	background-color: rgb(63, 60, 60);
+	border-radius: 50%;
+	position: relative;
+}
+
+.koleso__1{
+	border-radius: 50%;
+
+
+	border-right: 45px solid rgba(255, 255, 255, 0.774);
+	border-left:45px solid rgba(255, 255, 255, 0.774);
+	
+	border-top: 45px solid rgba(213, 215, 216, 0.801);
+	border-bottom: 45px solid rgba(213, 215, 216, 0.801);
+
+	position: absolute;
+	top: 25%;
+	left: 25%; 
+
+animation-name: koleso;
+animation-duration: 1s;
+animation-timing-function: linear;
+
+}
+
+@keyframes koleso{
+	0%{
+		transform: rotate(0deg);
+	}
+	
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+
+
+
+
+.koleso__2{
+	width: 35px;
+	height: 35px;
+	background-color: black;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.koleso_right{
+	position: absolute;
+	top: -50px;
+	left: 590px;
+}
+
+
+
+.block__det0{
+	width: 540px;
+	height: 150px;
+	background-color: rgb(241, 12, 222);
+	border-radius: 46% 43% 33% 0% / 100% 100% 0% 0%  ;
+	position: relative;
+	left: 240px;
+	top: 10px;
+	border: 1px solid #000;
+}
+
+.block__okno{
+	width: 225px;
+	height: 120px;
+	background-color: rgba(219, 231, 231, 0.904);
+	border-radius: 69% 0% 57% 42% / 100% 99% 0% 0% ;
+	position: absolute;
+	top: 28px;
+	left: 32px;
+	border: 2px solid #000;
+	
+}
+
+.block__okno_right{
+	transform: scale(-1, 1);
+	top: 28px;
+	left: 285px;
+
+}
+
+
+
+
+.block__fara{
+width: 53px;
+height: 69px;
+background-color: darkorange;
+border-radius: 0% 77% 57% 55% / 100% 39% 40% 0% ;
+position: absolute;
+top: 65px;
+border: 1px solid #000;
+animation-name: fara;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-delay: 1s;
+}
+
+@keyframes fara{
+	0%{background-color: darkorange;
+
+	}
+	100%{
+		background-color: rgb(255, 255, 255);
+	}
+}
+
+
+
+
+.block__ruchka{
+	width: 35px;
+	height: 20px;
+	border-radius: 25%;
+	background-color: white;
+	position: absolute;
+	top: 10px;
+	left: 50px;
+	border: 1px solid #000;
+
+}
+
+.block__ruchka_right{
+	left: 285px;
+
+}
+
+.block__zad-fara{
+	width: 13px;
+	height: 60px;
+	background-color: darkred;
+	border-radius: 0% 100% 100% 0% / 100% 50% 57% 0%;
+	position: absolute;
+	top: 60px;
+	left: 406px;
+	transform: rotate(-7deg);
+	animation-name: zadfara;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+
+}
+
+@keyframes zadfara{
+	0%{background-color: darkred;
+
+	}
+	100%{
+		background-color: rgb(255, 202, 27);
+	}
+}
+
+
+/* ............................................................................................................. */
+
+.police{
+	display: inline-block;
+	transform: translate(150%,30px) scale(0.5,0.5);
+
+	position: relative;
+
+animation-name: dvij;
+animation-duration: 4s;
+animation-direction: alternate;
+animation-fill-mode: forwards; 
+animation-delay: 2.5s;
+}
+
+ @keyframes dvij{
+0%{transform: translate(150%,-100px) scale(0.5,0.5);
+
+}
+100%{transform: translate(50%,-100px) scale(0.5,0.5);
+
+}
+} 
+
+
+
+
+.police__det1{display: inline-block;
+	width: 410px;
+	height: 140px;
+	background-color: rgb(27, 12, 241);
+	border-radius: 100% 0% 100% 0% / 50% 100% 0% 50%  ;
+	position: relative;
+	border: 1px solid #000;
+	border-bottom:1px transparent;
+
+}
+
+.police__det2{display: inline-block;
+	width: 410px;
+	height: 140px;
+	border-radius: 89% 11% 100% 0% / 0% 100% 0% 100% 
+	;
+	background-color: rgb(27, 12, 241);
+	position: absolute;
+	top: 0px;
+	left: 400px;
+	border: 1px solid #000;
+	border-left:1px transparent;
+	border-bottom:1px transparent;
+
+}
+
+.police__det3{
+	width: 850px;
+	height: 60px;
+	background-color: rgb(245, 238, 244);
+	border-radius: 20px;
+	transform: translate(-15px, 0px);
+	position: relative;
+	border: 1px solid #000;
+
+}
+
+.police__det4{
+	position: absolute;
+	top: -50px;
+	left: 130px;
+
+
+}
+
+
+.p-koleso{
+	width: 180px;
+	height: 180px;
+	background-color: rgb(63, 60, 60);
+	border-radius: 50%;
+	position: relative;
+}
+
+.p-koleso__1{
+	border-radius: 50%;
+
+
+	border-right: 45px solid rgba(255, 255, 255, 0.774);
+	border-left:45px solid rgba(255, 255, 255, 0.774);
+	
+	border-top: 45px solid rgba(213, 215, 216, 0.801);
+	border-bottom: 45px solid rgba(213, 215, 216, 0.801);
+
+	position: absolute;
+	top: 25%;
+	left: 25%; 
+
+animation-name: koleso-p;
+animation-duration: 6s;
+animation-timing-function: linear;
+
+}
+
+@keyframes koleso-p{
+	0%{
+		transform: rotate(0deg);
+	}
+	
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+
+
+
+
+.p-koleso__2{
+	width: 35px;
+	height: 35px;
+	background-color: black;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.p-koleso_right{
+	position: absolute;
+	top: -50px;
+	left: 590px;
+} 
+
+
+
+.police__det0{
+	width: 540px;
+	height: 150px;
+	background-color: rgb(27, 12, 241);
+	border-radius: 46% 43% 33% 0% / 100% 100% 0% 0%  ;
+	position: relative;
+	left: 240px;
+	top: 10px;
+	border: 1px solid #000;
+}
+
+.police__okno{
+	width: 225px;
+	height: 120px;
+	background-color: rgba(219, 231, 231, 0.904);
+	border-radius: 69% 0% 57% 42% / 100% 99% 0% 0% ;
+	position: absolute;
+	top: 28px;
+	left: 32px;
+	border: 2px solid #000;
+	
+}
+
+.police__okno_right{
+	transform: scale(-1, 1);
+	top: 28px;
+	left: 285px;
+
+}
+
+
+
+
+.police__fara{
+width: 53px;
+height: 69px;
+background-color: darkorange;
+border-radius: 0% 77% 57% 55% / 100% 39% 40% 0% ;
+position: absolute;
+top: 65px;
+border: 1px solid #000;
+animation-name: fara;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-delay: 1s;
+}
+
+@keyframes fara{
+	0%{background-color: rgb(247, 124, 10);
+
+	}
+	100%{
+		background-color: rgb(253, 255, 255);
+	}
+}
+
+
+
+
+.police__ruchka{
+	width: 35px;
+	height: 20px;
+	border-radius: 25%;
+	background-color: white;
+	position: absolute;
+	top: 10px;
+	left: 50px;
+	border: 1px solid #000;
+
+}
+
+.police__ruchka_right{
+	left: 285px;
+
+}
+
+.police__zad-fara{
+	width: 13px;
+	height: 60px;
+	background-color: darkred;
+	border-radius: 0% 100% 100% 0% / 100% 50% 57% 0%;
+	position: absolute;
+	top: 60px;
+	left: 406px;
+	transform: rotate(-7deg);
+	animation-name: zadfara;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+
+}
+
+@keyframes zadfara{
+	0%{background-color: darkred;
+
+	}
+	100%{
+		background-color: rgb(255, 202, 27);
+	}
+}
+
+.police__verh-fara{
+	width: 60px;
+	height: 60px;
+	background-color: rgb(255, 124, 1);
+	position: absolute;
+	top: -60px;
+	left: 240px;
+	border-radius: 46% 46% 10% 10% / 46% 45% 0% 0% ;
+	animation-name: verhfara;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes verhfara{
+	0%{background-color: rgb(255, 124, 1);
+
+	}
+	100%{
+		background-color: rgb(221, 20, 20);
+	}
+}
+
+
+
+/* .................................................................................................................. */
+h1{
+	font-size: 30px;
+	padding: 30px;
+	color: brown;
+}
+
+h2{
+	max-width: 600px;
+	font-size: 20px;
+	background-color: rgb(255, 255, 255);
+	padding: 30px;
+	border-radius: 20%;
+	color: rgb(12, 11, 11);
+	margin-bottom: 30px;
+	border: 1px solid rgb(177, 173, 173);
+}
+
+.button{
+width: 280px;
+height: 60px;
+padding: 30px 30px;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 15px;
+border-radius: 10px;
+color: #fff;
+background-color: #5e5373;
+box-shadow: 0 5px 0px #3c354a;
+position: relative;
+top: 0;
+transition-duration: 0.5s;
+
+}
+
+.button:hover{
+	top: 2px;
+	background-color: #17d9e7;
+box-shadow: 0 3px 0px #3c354a;
+}
+
+.button2{
+	width: 280px;
+	height: 60px;
+	padding: 30px 30px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 15px;
+	border-radius: 10px;
+	color: #fff;
+	background-color: #5e5373;
+	box-shadow: 0 5px 0px #3c354a;
+	position: relative;
+	top: 0;
+	transition-duration: 3s;
+	transition-property: background-color ;
+	
+	}
+	
+	.button2:hover{
+		top: 2px;
+		background-color: #17d9e7;
+	box-shadow: 0 3px 0px #3c354a;
+	}
+
+	.button3{
+		width: 280px;
+		height: 60px;
+		padding: 30px 30px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 15px;
+		border-radius: 10px;
+		color: #fff;
+		background-color: #5e5373;
+		box-shadow: 0 5px 0px #3c354a;
+		position: relative;
+		top: 0;
+		transition-duration: 1s;
+		transition-property: all;
+transition-delay: 1s;
+		
+		}
+		
+		.button3:hover{
+			top: 2px;
+			background-color: #17d9e7;
+		box-shadow: 0 3px 0px #3c354a;
+		}
+
+
+		.button4{
+			margin-bottom: 40px;
+			width: 280px;
+			height: 60px;
+			padding: 30px 30px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-size: 15px;
+			border-radius: 10px;
+			color: #fff;
+			background-color: #5e5373;
+			box-shadow: 0 5px 0px #3c354a;
+			position: relative;
+			top: 0;
+			transition-duration: 1s;
+			transition-property: all;
+	transition-delay: 0s;
+	transition-timing-function: ease;
+			
+			}
+			
+			.button4:hover{
+				top: 2px;
+				background-color: #17d9e7;
+			box-shadow: 0 3px 0px #3c354a;
+			}
+
+			.button5{			
+				margin-bottom: 40px;
+				width: 280px;
+				height: 60px;
+				padding: 30px 30px;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-size: 15px;
+				border-radius: 10px;
+				color: #fff;
+				background-color: #5e5373;
+				box-shadow: 0 5px 0px #3c354a;
+				position: relative;
+				top: 0;
+				transition-duration: 1s;
+				transition-property: all;
+		transition-delay: 0s;
+		transition-timing-function: ease-in;
+				
+				}
+				
+				.button5:hover{
+					top: 2px;
+					background-color: #17d9e7;
+				box-shadow: 0 3px 0px #3c354a;
+				}
+	
+				
+				.button6{
+					margin-bottom: 40px;
+
+					width: 280px;
+					height: 60px;
+					padding: 30px 30px;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+					font-size: 15px;
+					border-radius: 10px;
+					color: #fff;
+					background-color: #5e5373;
+					box-shadow: 0 5px 0px #3c354a;
+					position: relative;
+					top: 0;
+					transition-duration: 1s;
+					transition-property: all;
+			transition-delay: 0s;
+			transition-timing-function: ease-out;
+					
+					}
+					
+					.button6:hover{
+						top: 2px;
+						background-color: #17d9e7;
+					box-shadow: 0 3px 0px #3c354a;
+					}
+		
+					.button7{
+						margin-bottom: 40px;
+	
+						width: 280px;
+						height: 60px;
+						padding: 30px 30px;
+						text-transform: uppercase;
+						letter-spacing: 2px;
+						font-size: 15px;
+						border-radius: 10px;
+						color: #fff;
+						background-color: #5e5373;
+						box-shadow: 0 5px 0px #3c354a;
+						position: relative;
+						top: 0;
+						transition-duration: 1s;
+						transition-property: all;
+				transition-delay: 0s;
+				transition-timing-function: ease-in-out;
+						
+						}
+						
+						.button7:hover{
+							top: 2px;
+							background-color: #17d9e7;
+						box-shadow: 0 3px 0px #3c354a;
+						}
+			
+						.button8{
+							margin-bottom: 40px;
+		
+							width: 280px;
+							height: 60px;
+							padding: 30px 30px;
+							text-transform: uppercase;
+							letter-spacing: 2px;
+							font-size: 15px;
+							border-radius: 10px;
+							color: #fff;
+							background-color: #5e5373;
+							box-shadow: 0 5px 0px #3c354a;
+							position: relative;
+							top: 0;
+							transition-duration: 1s;
+							transition-property: all;
+					transition-delay: 0s;
+					transition-timing-function: linear;
+							
+							}
+							
+							.button8:hover{
+								top: 2px;
+								background-color: #17d9e7;
+							box-shadow: 0 3px 0px #3c354a;
+							}
+				
+
+							.button9{
+								margin-bottom: 40px;
+			
+								width: 280px;
+								height: 60px;
+								padding: 30px 30px;
+								text-transform: uppercase;
+								letter-spacing: 2px;
+								font-size: 15px;
+								border-radius: 10px;
+								color: #fff;
+								background-color: #5e5373;
+								box-shadow: 0 5px 0px #3c354a;
+								position: relative;
+								top: 0;
+								transition-duration: 0.5s;
+								transition-property: all;
+						transition-delay: 0s;
+						transition-timing-function: steps(4,start);
+								
+								}
+								
+								.button9:hover{
+									top: 2px;
+									background-color: #17d9e7;
+								box-shadow: 0 2px 0px #3c354a;
+								}
+					
+								.button10{
+									margin-bottom: 40px;
+				
+									width: 280px;
+									height: 60px;
+									padding: 30px 30px;
+									text-transform: uppercase;
+									letter-spacing: 2px;
+									font-size: 15px;
+									border-radius: 10px;
+									color: #fff;
+									background-color: #5e5373;
+									box-shadow: 0 5px 0px #3c354a;
+									position: relative;
+									top: 0;
+									transition-duration: 0.5s;
+									transition-property: all;
+							transition-delay: 0s;
+							transition-timing-function: steps(4,end);
+									
+									}
+									
+									.button10:hover{
+										top: 2px;
+										background-color: #17d9e7;
+									box-shadow: 0 2px 0px #3c354a;
+									}
+						
+									.button11{
+										margin-bottom: 40px;
+					
+										width: 280px;
+										height: 60px;
+										padding: 30px 30px;
+										text-transform: uppercase;
+										letter-spacing: 2px;
+										font-size: 15px;
+										border-radius: 10px;
+										color: #fff;
+										background-color: #5e5373;
+										box-shadow: 0 5px 0px #3c354a;
+										position: relative;
+										top: 0;
+										transition-duration: 0.5s;
+										transition-property: all;
+								transition-delay: 0s;
+								transition-timing-function: cubic-bezier(0.68,-0.55,0.265,1.55);
+										
+										}
+										
+										.button11:hover{
+											top: 2px;
+											background-color: #17d9e7;
+										box-shadow: 0 2px 0px #3c354a;
+										}
+
+										.button12{
+											margin-bottom: 40px;
+						
+											width: 280px;
+											height: 60px;
+											padding: 30px 30px;
+											text-transform: uppercase;
+											letter-spacing: 2px;
+											font-size: 15px;
+											border-radius: 10px;
+											color: #fff;
+											background-color: #5e5373;
+											box-shadow: 0 5px 0px #3c354a;
+											position: relative;
+											top: 0;
+											transition:background-color 0.5s ease 0s, color 1s linear 0s, 
+											font-size 0.5s ease-in-out 0.5s ;
+											
+											}
+											
+											.button12:hover{
+												top: 2px;
+												background-color: #17d9e7;
+												color: violet;
+												font-size: 20px;
+											box-shadow: 0 2px 0px #3c354a;
+											}
+								
+
+
+.animation__item{
+	width: 100px;
+	height: 100px;
+	background-color: teal;
+	position: relative;
+	animation-name: rectangle2,rectangle;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+}
+
+@keyframes rectangle{
+	0%{
+		left:0%;
+	}
+	100%{
+		left:50%;
+	}
+}
+
+@keyframes rectangle2{
+	0%{
+		top:0px;
+	}
+	25%{
+		top:35px;
+		background-color: rgb(203, 253, 19);
+		border-radius: 50%;
+	}
+	45%{
+		top:-35px;
+		background-color: rgb(243, 122, 9);
+		border-radius: 50%;
+	}
+	75%{
+		top:35px;
+		background-color: rgb(28, 240, 99);
+		border-radius: 50%;
+	}
+
+	100%{
+		top:0px;
+	}
+}
+
+.animation__item2{
+	width: 100px;
+	height: 100px;
+	background-color: teal;
+	position: relative;
+	animation-name: rectangle2,rectangle;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+animation-direction: reverse;
+}
+
+.animation__item3{
+	width: 100px;
+	height: 100px;
+	background-color: teal;
+	position: relative;
+	animation-name: rectangle2,rectangle;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+animation-direction: alternate;
+}
+
+.animation__item4{
+	width: 100px;
+	height: 100px;
+	background-color: teal;
+	position: relative;
+	animation-name: rectangle2,rectangle;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+animation-direction: alternate-reverse;
+}
+.animation__item5{
+	width: 100px;
+	height: 100px;
+	background-color: teal;
+	position: relative;
+	animation-name: rectangle2,rectangle;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+animation-direction: alternate-reverse;
+}
+
+.animation__item5:hover{
+	animation-play-state: paused;
+}
+
+.animation__item6{
+	width: 100px;
+	height: 100px;
+	background-color: teal;
+	position: relative;
+	animation-name: rectangle2,rectangle;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+animation-delay: 2s;
+}
+
+
+.animation__item7{
+	width: 100px;
+	height: 100px;
+	background-color: rgb(199, 253, 4);
+	position: relative;
+	animation-name: gustov;
+	animation-duration: 6s;
+	animation-timing-function: linear;
+animation-delay: 0.3s;
+animation-fill-mode:backwards ;
+}
+.animation__item8{
+	width: 100px;
+	height: 100px;
+	background-color: rgb(199, 253, 4);
+	position: relative;
+	animation-name: gustov;
+	animation-duration: 6s;
+	animation-timing-function: linear;
+animation-delay: 0.3s;
+animation-fill-mode: forwards;
+}
+
+@keyframes gustov{
+	0%{
+		left:0%;
+	}
+	50%{
+		left:25%; 
+		background-color: sienna;
+	}
+	100%{
+		left:50%;width: 200px;
+		height: 200px;
+		background-color: orange;
+		
+	}
+}
